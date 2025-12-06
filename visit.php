@@ -7,13 +7,12 @@ else{
     $_SESSION['counter']=1;
 }
 
-$msg = "شما ازین صفحه به تعداد". $_SESSION['counter'];
-$msg .= "بازدید داشته اید!";
-
+$msg = "شما از این صفحه به تعداد  ". $_SESSION['counter'];
+$msg .= "  بار بازدید داشته اید!";
 ?>
 
 <title>تعداد بازدید کاربر</title>
 
 <?php
-each($msg)
+echo($msg);
 ?>
